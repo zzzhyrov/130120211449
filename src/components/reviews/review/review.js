@@ -1,14 +1,19 @@
 import React from 'react';
+import styles from './review.module.css';
 
 const Review = ({ review }) => {
   const { id, text, date } = review;
 
   return (
     <div>
-      <div>
-        <h4>User: {id}</h4>
-        <p>Date: {date}</p>
-        <p>Text: {text}</p>
+      <div className={styles.reviewInfoContainer}>
+        <div className={styles.reviewInfoName}>
+          <b>{id}</b>
+        </div>
+        <div className={styles.reviewInfoDate}>{date}</div>
+      </div>
+      <div className={styles.reviewAreaContainer}>
+        <div className={styles.reviewArea}>{text}</div>
       </div>
     </div>
   );
