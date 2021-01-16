@@ -1,0 +1,42 @@
+.reviewsBody {
+  padding: 20px;
+}
+
+.reviewsHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.reviewsHeaderItem {
+  display: inline-flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.reviewsHeaderItem:last-child {
+  margin-left: 1rem;
+}
+
+.sortReviewsHandler {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.sortReviewsHandler:hover {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.icon:hover {
+  transform: scale(1.25);
+}

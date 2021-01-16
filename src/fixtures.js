@@ -16,6 +16,7 @@ const managers = [
       '429dea85-11dd-4054-a31e-c60c92e17255',
       '1547335a-ea18-4547-a73d-32bd6e9f651c',
     ],
+    likes: 131,
   },
 ];
 
