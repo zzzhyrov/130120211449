@@ -1,14 +1,12 @@
 import React from 'react';
 import Reviews from '../reviews';
-// import {
-//   normalizedManagers,
-//   normalizedReviews,
-//   normalizedUsers,
-// } from '../../fixtures';
+import { reviews } from '../../fixtures';
 
 const App = () => (
   <div>
-    <Reviews />
+    Manager's Profile
+    <br />
+    <Reviews reviews={reviews} />
   </div>
 );
 
