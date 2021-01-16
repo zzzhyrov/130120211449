@@ -10,7 +10,7 @@ const managers = [
       'Пакетные туры': 3,
       Отели: 1,
     },
-    image: '#',
+    image: './images/photo.png',
     reviews: [
       '5909796d-5030-4e36-adec-68b8f9ec2d96',
       '429dea85-11dd-4054-a31e-c60c92e17255',

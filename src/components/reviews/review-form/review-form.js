@@ -6,9 +6,7 @@ const ReviewForm = () => {
   return (
     <div className={styles.reviewFormContainer}>
       <form className={styles.reviewForm}>
-        <div className={styles.reviewFormItem}>
-          <textarea className={styles.message} />
-        </div>
+        <textarea className={styles.message} />
         <div>
           <button className={styles.submitButton}>Написать консультанту</button>
         </div>
