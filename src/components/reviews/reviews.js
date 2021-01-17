@@ -6,7 +6,10 @@ import styles from './reviews.module.css';
 import { ReactComponent as ReviewsIcon } from './icons/reviews.svg';
 import { ReactComponent as LikeIcon } from './icons/like.svg';
 
-const Reviews = ({ reviews, likes, reviewsQuantity }) => {
+const Reviews = ({ reviews, likes, activeManagerId }) => {
+  const renderReviewsQuantity = 3;
+  const limitRenderReviewsQuantity = reviews.slice(0, renderReviewsQuantity);
+
   return (
     <div className={styles.reviewsBody}>
       <div className={styles.reviewsHeader}>
@@ -29,15 +32,15 @@ const Reviews = ({ reviews, likes, reviewsQuantity }) => {
           </div>
           <div className={styles.reviewsHeaderItem}>
             <ReviewsIcon className={styles.icon} />
-            <div>{reviewsQuantity}</div>
+            <div>{reviews.length}</div>
           </div>
         </div>
       </div>
 
-      {reviews.map((review) => (
-        <Review key={review.id} review={review} />
+      {limitRenderReviewsQuantity.map((id) => (
+        <Review key={id} id={id} />
       ))}
-      <ReviewForm />
+      <ReviewForm id={activeManagerId} />
     </div>
   );
 };

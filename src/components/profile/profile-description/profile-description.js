@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from './profile-description.module.css';
 
-const ProfileDescription = ({ manager }) => {
-  const { name, position, description } = manager;
-
+const ProfileDescription = ({ position, description }) => {
   return (
     <div className={styles.profileContainer}>
       <div className={styles.profilePhoto}></div>

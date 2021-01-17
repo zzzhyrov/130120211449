@@ -1,14 +1,15 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import styles from './review.module.css';
 
-const Review = ({ review }) => {
-  const { id, text, date } = review;
+const Review = ({ review, userName }) => {
+  const { text, date } = review;
 
   return (
     <div>
       <div className={styles.reviewInfoContainer}>
         <div className={styles.reviewInfoName}>
-          <b>{id}</b>
+          <b>{userName}</b>
         </div>
         <div className={styles.reviewInfoDate}>{date}</div>
       </div>
@@ -19,4 +20,15 @@ const Review = ({ review }) => {
   );
 };
 
-export default Review;
+const mapStateToProps = (state, ownProps) => {
+  const review = state.reviews[ownProps.id];
+  const userId = review.userId;
+  const userName = state.users[userId].name;
+
+  return {
+    review,
+    userName,
+  };
+};
+
+export default connect(mapStateToProps)(Review);

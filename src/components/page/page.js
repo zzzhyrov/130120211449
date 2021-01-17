@@ -1,18 +1,24 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Profile from '../profile/profile';
 import Reviews from '../reviews';
 import styles from './page.module.css';
-import { managers, reviews } from '../../fixtures';
 
-const Page = () => (
-  <div className={styles.pageBody}>
-    <Profile manager={managers[0]} />
-    <Reviews
-      reviews={reviews}
-      likes={managers[0].likes}
-      reviewsQuantity={managers[0].reviews.length}
-    />
-  </div>
-);
+const Page = ({ manager }) => {
+  const { id, name, likes, reviews, position, description } = manager;
+  return (
+    <div className={styles.pageBody}>
+      <Profile
+        name={name}
+        position={position}
+        description={description}
+        activeManagerId={id}
+      />
+      <Reviews reviews={reviews} likes={likes} activeManagerId={id} />
+    </div>
+  );
+};
 
-export default Page;
+export default connect((state, ownProps) => ({
+  manager: state.managers[ownProps.id],
+}))(Page);

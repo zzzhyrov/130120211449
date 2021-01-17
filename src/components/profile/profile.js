@@ -7,7 +7,7 @@ const Profile = ({ manager }) => {
   return (
     <div className={styles.profileBody}>
       <ProfileDescription manager={manager} />
-      <ProfileStats manager={manager} />
+      {/* <ProfileStats manager={manager} /> */}
     </div>
   );
 };
