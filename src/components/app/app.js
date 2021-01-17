@@ -1,18 +1,14 @@
-import React from 'react';
-import Profile from '../profile/profile';
-import Reviews from '../reviews';
-import styles from './app.module.css';
-import { managers, reviews } from '../../fixtures';
+import React, { PureComponent } from 'react';
+import Page from '../page';
 
-const App = () => (
-  <div className={styles.appBody}>
-    <Profile manager={managers[0]} />
-    <Reviews
-      reviews={reviews}
-      likes={managers[0].likes}
-      reviewsQuantity={managers[0].reviews.length}
-    />
-  </div>
-);
+class App extends PureComponent {
+  render() {
+    return (
+      <div>
+        <Page />
+      </div>
+    );
+  }
+}
 
 export default App;
