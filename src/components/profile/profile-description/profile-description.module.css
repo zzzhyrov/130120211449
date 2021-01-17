@@ -25,32 +25,36 @@
 
 .profileDataGeneral {
   margin-top: 10px;
-  margin-left: calc(10rem + 20px);
-  height: 50%;
+  margin-left: calc(10rem + 10px);
+  height: 100%;
 }
 
 .profileDataGeneral__name {
+  height: 2rem;
   font: 1rem var(--black);
   font-size: 1rem;
   font-weight: 700;
-  height: 50%;
+  display: flex;
+  align-items: center;
 }
 
-.profileDataGeneral__position {
-  height: 50%;
+.profileDataGeneral__jobPosition {
+  height: 2rem;
   font: var(--gray);
   font-size: 12px;
   opacity: 70%;
   font-weight: 400;
+  display: flex;
+  align-items: center;
 }
 
 .profileDataGeneral__description {
   margin-bottom: 10px;
-  margin-left: calc(5rem + 20px);
-  height: 50%;
-  padding: 1rem;
-  padding-left: 5rem;
-
+  margin-left: 5rem;
+  height: 100%;
+  line-height: 1.5rem;
+  padding: 0.5rem;
+  padding-left: calc(5rem + 10px);
   display: flex;
   flex-direction: row;
   align-items: center;

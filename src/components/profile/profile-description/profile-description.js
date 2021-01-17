@@ -10,7 +10,9 @@ const ProfileDescription = ({ manager }) => {
       <div className={styles.profileData}>
         <div className={styles.profileDataGeneral}>
           <div className={styles.profileDataGeneral__name}>{name}</div>
-          <div className={styles.profileDataGeneral__position}>{position}</div>
+          <div className={styles.profileDataGeneral__jobPosition}>
+            {position}
+          </div>
         </div>
         <div className={styles.profileDataGeneral__description}>
           {description}
