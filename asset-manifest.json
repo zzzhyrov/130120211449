@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a5ddb45.chunk.css",
-    "main.js": "/static/js/main.d2cc1971.chunk.js",
-    "main.js.map": "/static/js/main.d2cc1971.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1882d7da.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1882d7da.js.map",
-    "static/css/2.679831fc.chunk.css": "/static/css/2.679831fc.chunk.css",
-    "static/js/2.cd128d87.chunk.js": "/static/js/2.cd128d87.chunk.js",
-    "static/js/2.cd128d87.chunk.js.map": "/static/js/2.cd128d87.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.679831fc.chunk.css.map": "/static/css/2.679831fc.chunk.css.map",
-    "static/css/main.2a5ddb45.chunk.css.map": "/static/css/main.2a5ddb45.chunk.css.map",
-    "static/js/2.cd128d87.chunk.js.LICENSE.txt": "/static/js/2.cd128d87.chunk.js.LICENSE.txt",
-    "static/media/like.c2720990.svg": "/static/media/like.c2720990.svg",
-    "static/media/profile-description.module.css": "/static/media/photo.5ea47308.png",
-    "static/media/reviews.35a29810.svg": "/static/media/reviews.35a29810.svg"
+    "main.css": "/130120211449/static/css/main.380638fa.chunk.css",
+    "main.js": "/130120211449/static/js/main.d2cc1971.chunk.js",
+    "main.js.map": "/130120211449/static/js/main.d2cc1971.chunk.js.map",
+    "runtime-main.js": "/130120211449/static/js/runtime-main.d902ab61.js",
+    "runtime-main.js.map": "/130120211449/static/js/runtime-main.d902ab61.js.map",
+    "static/css/2.679831fc.chunk.css": "/130120211449/static/css/2.679831fc.chunk.css",
+    "static/js/2.cd128d87.chunk.js": "/130120211449/static/js/2.cd128d87.chunk.js",
+    "static/js/2.cd128d87.chunk.js.map": "/130120211449/static/js/2.cd128d87.chunk.js.map",
+    "index.html": "/130120211449/index.html",
+    "static/css/2.679831fc.chunk.css.map": "/130120211449/static/css/2.679831fc.chunk.css.map",
+    "static/css/main.380638fa.chunk.css.map": "/130120211449/static/css/main.380638fa.chunk.css.map",
+    "static/js/2.cd128d87.chunk.js.LICENSE.txt": "/130120211449/static/js/2.cd128d87.chunk.js.LICENSE.txt",
+    "static/media/like.c2720990.svg": "/130120211449/static/media/like.c2720990.svg",
+    "static/media/profile-description.module.css": "/130120211449/static/media/photo.5ea47308.png",
+    "static/media/reviews.35a29810.svg": "/130120211449/static/media/reviews.35a29810.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1882d7da.js",
+    "static/js/runtime-main.d902ab61.js",
     "static/css/2.679831fc.chunk.css",
     "static/js/2.cd128d87.chunk.js",
-    "static/css/main.2a5ddb45.chunk.css",
+    "static/css/main.380638fa.chunk.css",
     "static/js/main.d2cc1971.chunk.js"
   ]
 }
