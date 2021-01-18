@@ -18,12 +18,12 @@
   margin-left: 1rem;
 }
 
-.sortReviewsHandler {
+.sortReviewsHandlerDisabled {
   font-size: 12px;
   font-weight: 400;
 }
 
-.sortReviewsHandler:hover {
+.sortReviewsHandlerEnabled {
   font-size: 1rem;
   font-weight: bold;
   color: var(--black);

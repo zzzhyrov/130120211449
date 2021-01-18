@@ -8,19 +8,22 @@ import { ReactComponent as LikeIcon } from './icons/like.svg';
 
 const Reviews = ({ reviews, likes, activeManagerId }) => {
   const renderReviewsLimit = 3;
-  const renderedReviews = reviews.slice(0, renderReviewsLimit);
+  const renderedReviews = reviews.slice(
+    reviews.length - renderReviewsLimit,
+    reviews.length
+  );
 
   return (
     <div className={styles.reviewsBody}>
       <div className={styles.reviewsHeader}>
         <div className={styles.reviewsHeaderItem}>
           <div className={styles.reviewsHeaderItem}>
-            <a href="#" className={styles.sortReviewsHandler}>
+            <a href="#" className={styles.sortReviewsHandlerEnabled}>
               Последние отзывы
             </a>
           </div>
           <div className={styles.reviewsHeaderItem}>
-            <a href="#" className={styles.sortReviewsHandler}>
+            <a href="#" className={styles.sortReviewsHandlerDisabled}>
               Все отзывы
             </a>
           </div>

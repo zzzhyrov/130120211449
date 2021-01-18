@@ -8,9 +8,7 @@ const Review = ({ review, userName }) => {
   return (
     <div>
       <div className={styles.reviewInfoContainer}>
-        <div className={styles.reviewInfoName}>
-          <b>{userName}</b>
-        </div>
+        <div className={styles.reviewInfoName}>{userName}</div>
         <div className={styles.reviewInfoDate}>{date}</div>
       </div>
       <div className={styles.reviewAreaContainer}>
