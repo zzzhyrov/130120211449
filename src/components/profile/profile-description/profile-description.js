@@ -1,7 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import styles from './profile-description.module.css';
 
-const ProfileDescription = ({ position, description }) => {
+const ProfileDescription = ({ name, position, description }) => {
   return (
     <div className={styles.profileContainer}>
       <div className={styles.profilePhoto}></div>
@@ -20,4 +21,10 @@ const ProfileDescription = ({ position, description }) => {
   );
 };
 
-export default ProfileDescription;
+const mapStateToProps = (state, ownProps) => ({
+  name: state.managers[ownProps.id].name,
+  position: state.managers[ownProps.id].position,
+  description: state.managers[ownProps.id].description,
+});
+
+export default connect(mapStateToProps)(ProfileDescription);

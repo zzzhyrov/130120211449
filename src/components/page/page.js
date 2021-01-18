@@ -5,15 +5,10 @@ import Reviews from '../reviews';
 import styles from './page.module.css';
 
 const Page = ({ manager }) => {
-  const { id, name, likes, reviews, position, description } = manager;
+  const { id, likes, reviews } = manager;
   return (
     <div className={styles.pageBody}>
-      <Profile
-        name={name}
-        position={position}
-        description={description}
-        activeManagerId={id}
-      />
+      <Profile activeManagerId={id} />
       <Reviews reviews={reviews} likes={likes} activeManagerId={id} />
     </div>
   );

@@ -1,0 +1,4 @@
+.profileStatsBody {
+  background: var(--gray);
+  margin-left: calc(10rem + 10px);
+}

@@ -3,11 +3,11 @@ import styles from './profile.module.css';
 import ProfileDescription from './profile-description';
 import ProfileStats from './profile-stats';
 
-const Profile = ({ manager }) => {
+const Profile = ({ activeManagerId }) => {
   return (
     <div className={styles.profileBody}>
-      <ProfileDescription manager={manager} />
-      {/* <ProfileStats manager={manager} /> */}
+      <ProfileDescription id={activeManagerId} />
+      <ProfileStats id={activeManagerId} />
     </div>
   );
 };

@@ -1,22 +1,23 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import styles from './profile-stats.module.css';
 
-const ProfileStats = ({ manager }) => {
-  const { bookings, tours, hotels } = manager.services;
+const ProfileStats = ({ services }) => {
+  const { bookings, tours, hotels } = services;
 
-  const totalServices = Object.values(manager.services).reduce(
+  const totalServices = Object.values(services).reduce(
     (acc, subtotal) => acc + subtotal,
     0
   );
 
   const chartHeight = 100;
 
-  const services = Object.values(manager.services);
+  const servicesCount = Object.values(services);
 
   const getColumnBody = () => {
-    const maxValue = Math.max(...services);
+    const maxValue = Math.max(...servicesCount);
 
-    return services
+    return servicesCount
       .map((item) => {
         const scale = chartHeight / maxValue;
         const percent = ((item / maxValue) * 100).toFixed(0);
@@ -29,7 +30,7 @@ const ProfileStats = ({ manager }) => {
   };
 
   return (
-    <div>
+    <div className={styles.profileStatsBody}>
       <div>
         <div>
           <div>Ручное бронирование: </div>
@@ -48,9 +49,13 @@ const ProfileStats = ({ manager }) => {
         <div>Всего: </div>
         <div>{totalServices}</div>
       </div>
-      {getColumnBody(services)}
+      {getColumnBody(servicesCount)}
     </div>
   );
 };
 
-export default ProfileStats;
+const mapStateToProps = (state, ownProps) => ({
+  services: state.managers[ownProps.id].services,
+});
+
+export default connect(mapStateToProps)(ProfileStats);
