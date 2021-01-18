@@ -7,8 +7,8 @@ import { ReactComponent as ReviewsIcon } from './icons/reviews.svg';
 import { ReactComponent as LikeIcon } from './icons/like.svg';
 
 const Reviews = ({ reviews, likes, activeManagerId }) => {
-  const renderReviewsQuantity = 3;
-  const limitRenderReviewsQuantity = reviews.slice(0, renderReviewsQuantity);
+  const renderReviewsLimit = 3;
+  const renderedReviews = reviews.slice(0, renderReviewsLimit);
 
   return (
     <div className={styles.reviewsBody}>
@@ -37,10 +37,10 @@ const Reviews = ({ reviews, likes, activeManagerId }) => {
         </div>
       </div>
 
-      {limitRenderReviewsQuantity.map((id) => (
+      {renderedReviews.map((id) => (
         <Review key={id} id={id} />
       ))}
-      <ReviewForm id={activeManagerId} />
+      <ReviewForm activeManagerId={activeManagerId} />
     </div>
   );
 };

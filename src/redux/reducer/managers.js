@@ -15,7 +15,7 @@ export default (managers = defaultManagers, action) => {
   switch (type) {
     case ADD_REVIEW: {
       const addedNewReview = payload.values.id;
-      const activeManagerId = payload.activeManagerId.activeManagerId;
+      const activeManagerId = payload.activeManagerId;
       const activeManagerData = managers[activeManagerId];
 
       return {
