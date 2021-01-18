@@ -1,4 +1,87 @@
 .profileStatsBody {
-  background: var(--gray);
   margin-left: calc(10rem + 10px);
+}
+
+.services_common {
+  border-bottom: 2px solid var(--alto);
+  margin-bottom: 1rem;
+  padding: 0 2rem 0.5rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profileStatsBody__services {
+  height: 2rem;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px 0;
+}
+.service_bookings {
+  height: 100%;
+  width: 75%;
+  background: var(--granny-smith-apple);
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 2px solid var(--alto);
+  white-space: nowrap;
+}
+
+.service_tours {
+  height: 100%;
+  width: 17%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 2px solid var(--alto);
+  background: var(--sail);
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.service_hotels {
+  height: 100%;
+  width: 9%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 2px solid var(--alto);
+  background: var(--sail);
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.services_quantity {
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 2.75rem;
+}
+
+.services_totalQuantity {
+  font-weight: 700;
+  margin-right: 2.75rem;
+}
+
+.services_total {
+  width: 100%;
+  border-top: 2px solid var(--alto);
+  margin-top: 1rem;
+  padding: 0.5rem 0 0 0;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
 }

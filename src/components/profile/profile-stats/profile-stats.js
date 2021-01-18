@@ -10,46 +10,27 @@ const ProfileStats = ({ services }) => {
     0
   );
 
-  const chartHeight = 100;
-
-  const servicesCount = Object.values(services);
-
-  const getColumnBody = () => {
-    const maxValue = Math.max(...servicesCount);
-
-    return servicesCount
-      .map((item) => {
-        const scale = chartHeight / maxValue;
-        const percent = ((item / maxValue) * 100).toFixed(0);
-
-        return `<div style="--value: ${Math.floor(
-          item * scale
-        )}" data-tooltip="${percent}%">${item}</div>`;
-      })
-      .join('');
-  };
-
   return (
     <div className={styles.profileStatsBody}>
       <div>
-        <div>
-          <div>Ручное бронирование: </div>
-          <div>{bookings}</div>
+        <div className={styles.services_common}>Услуг</div>
+        <div className={styles.profileStatsBody__services}>
+          <div className={styles.service_bookings}>Ручное бронирование</div>
+          <div className={styles.services_quantity}>{bookings}</div>
         </div>
-        <div>
-          <div>Пакетные туры: </div>
-          <div>{tours}</div>
+        <div className={styles.profileStatsBody__services}>
+          <div className={styles.service_tours}>Пакетные туры</div>
+          <div className={styles.services_quantity}>{tours}</div>
         </div>
-        <div>
-          <div>Отели: </div>
-          <div>{hotels}</div>
+        <div className={styles.profileStatsBody__services}>
+          <div className={styles.service_hotels}>Отели</div>
+          <div className={styles.services_quantity}>{hotels}</div>
         </div>
       </div>
-      <div>
-        <div>Всего: </div>
-        <div>{totalServices}</div>
+      <div className={styles.services_total}>
+        <div className={styles.services_totalQuantity}>Всего</div>
+        <div className={styles.services_totalQuantity}>{totalServices}</div>
       </div>
-      {getColumnBody(servicesCount)}
     </div>
   );
 };
