@@ -1,7 +1,5 @@
 # Admin Dashboard
 
-Данный проект был разработан в рамках тестового задания для [Antagosoft](https://antagosoft.com/) 👋
-
 > ## Tech stack
 
 - React / Redux
