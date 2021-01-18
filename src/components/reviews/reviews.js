@@ -18,12 +18,18 @@ const Reviews = ({ reviews, likes, activeManagerId }) => {
       <div className={styles.reviewsHeader}>
         <div className={styles.reviewsHeaderItem}>
           <div className={styles.reviewsHeaderItem}>
-            <a href="#" className={styles.sortReviewsHandlerEnabled}>
+            <a
+              href="http://localhost:3000/"
+              className={styles.sortReviewsHandlerEnabled}
+            >
               Последние отзывы
             </a>
           </div>
           <div className={styles.reviewsHeaderItem}>
-            <a href="#" className={styles.sortReviewsHandlerDisabled}>
+            <a
+              href="http://localhost:3000/"
+              className={styles.sortReviewsHandlerDisabled}
+            >
               Все отзывы
             </a>
           </div>

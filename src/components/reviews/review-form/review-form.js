@@ -44,7 +44,6 @@ const ReviewForm = ({ onSubmit, onKeyDown }) => {
 
 const mapDispatchToProps = (dispatch, props) => ({
   onSubmit: (values) => {
-    console.log(props.id);
     dispatch(addReview(values, props.activeManagerId));
   },
 });
