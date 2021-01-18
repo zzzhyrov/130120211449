@@ -2,6 +2,7 @@
   "name": "130120211449",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zzzhyrov.github.io/130120211449",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -19,6 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
