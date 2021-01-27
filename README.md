@@ -1,5 +1,9 @@
 # Admin Dashboard
 
+## Preview
+
+[![preview](./preview.jpg)](https://zzzhyrov.github.io/130120211449/)
+
 > ## Tech stack
 
 - React / Redux
